@@ -27,7 +27,9 @@ emoji_dict = {
   "logger": "\U0001F4C8",
   "localize": "\U0001F310",
   "typo": "\U0000270F",
-  "pencil": "\U0000270F"
+  "pencil": "\U0000270F",
+  "resource": "\U0001F69A",
+  "truck": "\U0001F69A"
 }
 
 commit_msg_filepath = sys.argv[1]

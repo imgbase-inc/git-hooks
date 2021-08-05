@@ -29,6 +29,7 @@ git config --global core.hooksPath [git-hooks 로컬 경로]
 - 👷 ci
 - 🚨 lint warning
 - 🚚 resource truck
+- ✅ test
 
 [git-hooks 프로젝트](https://github.com/imgbase-inc/git-hooks)
 [gitmoji 참고 페이지](https://gitmoji.carloscuesta.me/)

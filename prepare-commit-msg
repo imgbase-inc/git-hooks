@@ -29,7 +29,8 @@ emoji_dict = {
   "typo": "\U0000270F",
   "pencil": "\U0000270F",
   "resource": "\U0001F69A",
-  "truck": "\U0001F69A"
+  "truck": "\U0001F69A",
+  "test": "\U00002705"
 }
 
 commit_msg_filepath = sys.argv[1]

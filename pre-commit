@@ -1,0 +1,22 @@
+#!/bin/zsh
+if ! command -v swift-format >/dev/null 2>&1; then
+	exit 0
+fi
+
+if [ ! -f ".swift-format" ]; then
+	exit 0
+fi
+
+echo "Running swift-format before commit..."
+
+git diff --cached --name-only --diff-filter=ACM | grep '\.swift$' | while read file; do
+	swift-format format -i "$file"
+	git add "$file"
+done
+
+if [ $? -ne 0 ]; then
+	echo "Linting failed after formatting. Please check your code."
+	exit 1
+fi
+
+echo "swift-format completed successfully."
